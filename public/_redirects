@@ -1,0 +1,2 @@
+# Netlify Redirects & Canonicalization Rules
+# SPA / App Router handling is automatic via @netlify/plugin-nextjs

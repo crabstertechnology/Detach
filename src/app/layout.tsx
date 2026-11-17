@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Geist, Geist_Mono } from "next/font/google";
+import StructuredData from "@/components/StructuredData";
+import Analytics from "@/components/Analytics";
 import "./globals.css";
 import "./slashvibe.css";
 
@@ -20,21 +22,48 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
-  title: "Detach | Reconnect With What Matters",
+  metadataBase: new URL("https://detach.crabstertech.in"),
+  title: "Detach | Reconnect With What Matters - Handheld Touch Companion",
   description:
-    "A dedicated handheld companion to break compulsive phone scrolling. Features a vibrant 1.69 inch color touchscreen, all-day battery life, and shake to wake motion sensor.",
+    "A dedicated handheld companion by Crabster Technology to break compulsive phone scrolling. Features a vibrant 1.69 inch color touchscreen, all-day battery life, and shake to wake motion sensor.",
+  keywords: [
+    "Detach",
+    "Crabster Technology",
+    "digital wellbeing device",
+    "phone addiction companion",
+    "anti distraction device",
+    "mindful micro resets",
+    "ESP32-S3 touch companion",
+    "screen time reduction",
+    "pocket habit breaker",
+    "calm focus hardware"
+  ],
+  alternates: {
+    canonical: "https://detach.crabstertech.in",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "Detach | Reconnect With What Matters",
     description:
       "A dedicated physical companion to break compulsive screen habits. 1.69 inch color touch display, all-day battery, and USB-C fast charging.",
-    siteName: "DEtach - Crabster Technology",
+    url: "https://detach.crabstertech.in",
+    siteName: "Detach - Crabster Technology",
     images: [
       {
-        url: "/assets/generated/hero_cinematic.jpg",
-        width: 1376,
-        height: 768,
-        alt: "DEtach 1.69 inch Touch Companion",
+        url: "/assets/detach_hero_4k.webp",
+        width: 1920,
+        height: 1080,
+        alt: "Detach 1.69 inch Touch Companion by Crabster Technology",
       },
     ],
     locale: "en_US",
@@ -42,14 +71,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DEtach | 1.69\" Touch Companion",
+    title: "Detach | Reconnect With What Matters",
     description: "Distraction free touch companion for digital wellbeing by Crabster Technology.",
-    images: ["/assets/generated/hero_cinematic.jpg"],
+    images: ["/assets/detach_hero_4k.webp"],
   },
   icons: {
     icon: "/assets/favicon/favicon-dark.png",
     apple: "/assets/favicon/favicon-dark.png",
   },
+  category: "technology",
+  authors: [{ name: "Crabster Technology", url: "https://crabstertech.in" }],
+  creator: "Crabster Technology",
+  publisher: "Crabster Technology",
 };
 
 export default function RootLayout({
@@ -59,9 +92,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <StructuredData />
+      </head>
       <body
         className={`${spaceGrotesk.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-[#07070a] text-[#f4f4f7] min-h-screen selection:bg-[#3875ff]/30 selection:text-white`}
       >
+        <Analytics />
         {children}
       </body>
     </html>
