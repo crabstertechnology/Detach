@@ -1,0 +1,18 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="1420" height="230" viewBox="0 0 1420 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text x="50%" y="195" text-anchor="middle" font-family="'SlashVibe Refresh Space Grotesk', -apple-system, sans-serif" font-size="240" font-weight="700" letter-spacing="-0.06em" fill="#070c1a">
+    DETACH
+  </text>
+  <text x="50%" y="192" text-anchor="middle" font-family="'SlashVibe Refresh Space Grotesk', -apple-system, sans-serif" font-size="240" font-weight="700" letter-spacing="-0.06em" fill="none" stroke="#152449" stroke-width="2">
+    DETACH
+  </text>
+  <text x="50%" y="190" text-anchor="middle" font-family="'SlashVibe Refresh Space Grotesk', -apple-system, sans-serif" font-size="240" font-weight="700" letter-spacing="-0.06em" fill="url(#footer-blue-gradient)">
+    DETACH
+  </text>
+  <defs>
+    <linearGradient id="footer-blue-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14" />
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#3875ff" stop-opacity="0.25" />
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 24" fill="none" height="24" width="140">
+  <!-- Crabster emblem icon -->
+  <g transform="translate(0, 2)">
+    <circle cx="10" cy="10" r="10" fill="#ff671f" />
+    <path d="M10 4a6 6 0 1 0 5.2 3 1.2 1.2 0 1 1 2.08-1.2A8.4 8.4 0 1 1 10 1.6V4z" fill="#ffffff" />
+    <circle cx="10" cy="10" r="2.5" fill="#ffffff" />
+  </g>
+  <!-- DETACH typography -->
+  <text x="28" y="17" font-family="'SlashVibe Refresh Space Grotesk', -apple-system, sans-serif" font-size="16" font-weight="700" letter-spacing="-0.04em" fill="#ffffff">
+    Det<tspan fill="#ff671f">ach</tspan>
+  </text>
+  <!-- Mini sunburst ticks over 'ach' -->
+  <path d="M78 4L80 2M82 4.5L85 3M85 6.5L88 6" stroke="#ff671f" stroke-width="1.2" stroke-linecap="round" />
+</svg>
+
