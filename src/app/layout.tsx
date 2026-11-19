@@ -23,9 +23,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://detach.crabstertech.in"),
-  title: "Detach | Reconnect With What Matters - Handheld Touch Companion",
+  title: "Detach — Handheld Digital Wellbeing Companion | Reconnect With What Matters",
   description:
-    "A dedicated handheld companion by Crabster Technology to break compulsive phone scrolling. Features a vibrant 1.69 inch color touchscreen, all-day battery life, and shake to wake motion sensor.",
+    "Detach is a dedicated handheld companion by Crabster Technology that replaces compulsive phone scrolling with two-minute mindful micro-resets. Vibrant 1.69 inch color touch display, all-day battery, and shake to wake.",
   keywords: [
     "Detach",
     "Crabster Technology",
