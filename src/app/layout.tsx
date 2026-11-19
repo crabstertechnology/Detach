@@ -94,6 +94,18 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <head>
         <StructuredData />
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "zfzd370h2i");
+            `,
+          }}
+        />
       </head>
       <body
         className={`${spaceGrotesk.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-[#07070a] text-[#f4f4f7] min-h-screen selection:bg-[#3875ff]/30 selection:text-white`}
