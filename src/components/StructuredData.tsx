@@ -17,7 +17,8 @@ export default function StructuredData() {
         ],
         contactPoint: {
           "@type": "ContactPoint",
-          email: "hello@crabster.tech",
+          telephone: "+91 70103 96642",
+          email: "crabstertech@gmail.com",
           contactType: "Customer Support"
         }
       },
